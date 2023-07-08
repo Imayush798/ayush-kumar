@@ -1,0 +1,43 @@
+floatingNav{
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    border-radius:4rem;
+    backdrop-filter: blur(15px);
+    display: none;
+
+}
+floatingNav a {
+    background: transparent;
+    padding: 0.3rem;
+    border-radius: var(--border-radius-3);
+    display: flex;
+    color: var(light);
+    font-size: 1.1rem;
+}
+floatingNav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+    transform: translateY(-0.1rem);
+}
+floatingNav a.active {
+    /* background: rgba(0, 0, 0, 0.2); */
+    background: var(--color-primary);
+    color: var(--color-white);
+
+}
+@media screen and (max-width:1024px) {
+    floatingNav {
+       display: block;
+       display: flex; 
+    }
+}
+
