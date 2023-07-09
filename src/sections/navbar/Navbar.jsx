@@ -1,6 +1,6 @@
  import './navbar.css'
  import data from './data'
- import logo from '../../images/logo.png'
+ import logo from '../../images/logo.jpg'
  import {IoIosColorPalette} from 'react-icons/io'
 
 const Navbar = () => {
