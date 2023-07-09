@@ -1,5 +1,5 @@
 import './header.css'
-import image from '../../images/ayush.jpg'
+import Image from '../../images/ayush.jpg'
 import data from './data'
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <header id='header'>
       <div className="container header__container">
         <div className="header__profile">
-          <img src={image} alt="Header" />
+          <img src={Image} alt="Header" />
         </div>
         <h3>Ayush Kumar</h3>
         <p>Hello, I'm Ayush Kumar, a passionate front-end developer with a strong focus on React.js. Currently pursuing a B.Tech degree in Information Technology.</p>
@@ -22,7 +22,7 @@ const Header = () => {
           }
         </div>
       </div>
-    </header>
+    </header> 
   )
 }
 

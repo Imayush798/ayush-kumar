@@ -55,7 +55,7 @@
 }
 
 /* media queries */
- @media screen and(max-width: 1024px) {
+ @media screen and (max-width: 1024px) {
     header {
         margin-top: 0;
         height: 100vh;
@@ -63,8 +63,8 @@
     }
     
 }
-@media screen and(max-width: 600px) {
-    header {
+@media screen and (max-width: 600px) {
+    /* header {
          
         width: 14rem;
         height: 17rem;
@@ -76,7 +76,7 @@
     }
     .header__cta {
         gap: 1rem;
-    }
+    } */
     .header__socials {
         display: none;
     }
