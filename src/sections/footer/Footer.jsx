@@ -5,7 +5,7 @@ import Data from './data'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>aYuSh..</a>
+      <a href="#" className='footer__logo'>&lt;aYuSh&#47;&gt;</a>
       <ul className='permalinks'>
           {
             data.map(item=> <li key={item.id}><a href={item.link}>{item.title}</a></li>)

@@ -8,13 +8,15 @@
     
 }
 .portfolio__item {
-    background: var(--color-light);
+    /* background: var(--color-light); */
     padding: 0.5rem;
     border-radius: var(--border-radius-3);
     border: 1px solid transparent;
     /* transition: var(--transition); */
     justify-content: center;
     max-width: 25rem;;
+    padding-left:5rem;
+    padding-right: 5rem;
 }
 .portfolio__item:hover {
     border-color: var(--color-primary);
@@ -26,9 +28,9 @@
     border-radius:  var(--border-radius-1);
     border: 2px solid transparent;
     overflow: hidden;
-    /* width: 18rem; */
+    width: 15rem;
     height: 25rem;
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    /* margin: 0.rem 0.5rem 1rem; */
     
 }
 .portfolio__item h3 {
