@@ -3,9 +3,15 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
+
+
+  // const notify = () => toast("Message sent successfully!");
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,8 +19,11 @@ const Contact = () => {
     emailjs.sendForm('service_5irao0w', 'template_eqso1j8', form.current, 'PX5Ov7GdvwE24rJDN')
       .then((result) => {
           console.log(result.text);
+          alert('Message sent successfully!')
+          // toast.success('Message sent successfully!')
       }, (error) => {
           console.log(error.text);
+          // toast.error('Something went wrong please try again!')
       });
       e.target.reset();
   };
