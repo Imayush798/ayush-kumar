@@ -1,6 +1,6 @@
 import './about.css'
 import Image from '../../images/about.jpg'
-import resume from '../../images/Ayush_Kumar_resume.pdf'
+import resume from '../../images/ayush_kumar_resume.pdf'
 import Card from '../../components/Card'
 import data from './data'
 import {HiDownload} from 'react-icons/hi'
