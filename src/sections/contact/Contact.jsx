@@ -3,14 +3,14 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-// import { toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
 
 
-  // const notify = () => toast("Message sent successfully!");
+  const notify = () => toast.success("Message sent successfully!");
 
   const form = useRef();
   const sendEmail = (e) => {
@@ -54,7 +54,8 @@ const Contact = () => {
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button  type='submit' className='btn btn primary'>Send Message</button>
+          <button  type='submit' className='btn btn primary' onClick={notify}>Send Message</button>
+          <ToastContainer/>
         </form>
       </div>
     </section>
